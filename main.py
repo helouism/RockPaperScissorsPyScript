@@ -18,12 +18,19 @@ combinations = {
 
 class Game:
 
-        # Access combinations key to output the winner
+     # Responds when users click specific button
+     # 1 = Rock, 2 = Paper, 3 Scissors
+     # Print the result of the game by accessing the dictionary.
 
     def rock(event):
-        games_result.append(str(1))
-        games_result.append(str(random.randint(1,3)))
+        # User choose Rock = 1, convert it into string, and add it into the games_result list
+        games_result.append(str(1)) 
+        # Computer choose random number,convert it into string, and add it into the games_result list
+        games_result.append(str(random.randint(1,3))) 
+        # Convert the games_result list into string
         games_result_converted = "".join(games_result)
+
+        # Print the result on the output div
         output_div = document.querySelector("#output")
         output_div.innerText = combinations[int(games_result_converted)]
         games_result.clear()

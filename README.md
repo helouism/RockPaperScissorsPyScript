@@ -1,3 +1,4 @@
 # RockPaperScissorsPyScript
-Rock Paper Scissors game using Python and [PyScript](https://github.com/pyscript/pyscript)https://github.com/pyscript/pyscript
+Rock Paper Scissors game using Python and PyScript
 
+Explore their github repo here : https://github.com/pyscript/pyscript

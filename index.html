@@ -3,44 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text Modifier</title>
+    <title>Rock Paper Scissors</title>
     <link
       rel="stylesheet"
       href="https://pyscript.net/releases/2024.1.1/core.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+   
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
-      rel="stylesheet"
-    />
     <script
       type="module"
       src="https://pyscript.net/releases/2024.1.1/core.js"
     ></script>
   </head>
-
   <body>
-    <h3>Type your text here</h3>
-    <textarea
-      name="input_text"
-      id="input_text"
-      cols="180"
-      rows="10"
-      placeholder="Enter your text here"
-    ></textarea>
+    <h1>Rock Paper Scissors using Python and PyScript</h1>
+    <h2>Choose Rock, Paper or Scissors below</h2>
+    <button py-click="Game.rock" class="button">Rock</button>
+    <button py-click="Game.paper" class="button">Paper</button>
+    <button py-click="Game.scissors" class="button">Scissors</button>
 
-    <div id="char_count"><p>Character count :</p></div>
-    <div id="word_count"><p>Word count :</p></div>
-    <button py-click="Main.upper_case" class="button">UPPER CASE</button>
-    <button py-click="Main.lower_case" class="button">lower case</button>
-    <button py-click="Main.capitalized_case" class="button">
-      Capitalized Case
-    </button>
-    <h3>Converted text</h3>
-    <textarea name="converted_text" id="converted_text" cols="180" rows="10">
-    </textarea>
+    <div id="output" style="margin-top: 30px"></div>
     <script type="py" src="./main.py"></script>
   </body>
 </html>
